@@ -1,0 +1,8 @@
+.calendar {
+  display: block;
+  background-color: lightblue;
+}
+
+.calendar--error {
+  background-color: red;
+}

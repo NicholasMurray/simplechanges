@@ -1,0 +1,13 @@
+<div class="date-picker">
+  <app-date-input
+  [DateInputError]=errorState
+  (DateInputErrorOcurred)=onDateInputErrorOcurred($event)
+  ></app-date-input>
+  <app-calendar
+    class="app-calendar"
+    [ngClass]="{'app-calendar--hasError': hasDateError}"
+    [DateError]=hasDateError
+    ></app-calendar>
+  <br />
+  <button (click)="toggleErrorState()">toggle Error State</button>
+</div>

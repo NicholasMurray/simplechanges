@@ -1,0 +1,19 @@
+.date-picker {
+  background-color: lightgray;
+  display: block;
+}
+
+.app-calendar {
+  display: inline-block;
+}
+
+.app-calendar:after {
+  background-color: white;
+  content: "\1F4C5";
+}
+
+.app-calendar--hasError:after {
+  background-color: red;
+}
+
+
